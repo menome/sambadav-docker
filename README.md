@@ -2,7 +2,11 @@
 
 This is a docker container configured to run [SambaDAV](https://github.com/1afa/sambadav)
 
+View on [Docker Hub](https://hub.docker.com/r/menome/sambadav/)
+
 ## Instructions
+
+Pull the container with `docker pull menome/sambadav`
 
 The container exposes two mount points:
 
