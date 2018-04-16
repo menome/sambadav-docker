@@ -2,6 +2,7 @@ FROM php:7.0-apache
 
 VOLUME ["/var/www/htdocs/webfolders/config","/etc/ssl/localcerts"]
 ENV SAMBADAV_ENABLE_SSL=true
+ENV SAMBADAV_SSL_REDIRECT=false
 WORKDIR /var/www/htdocs/webfolders
 RUN mkdir log data && chown daemon:root log data && chmod 0750 log data
 
