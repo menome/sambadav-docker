@@ -15,6 +15,7 @@ The container exposes two mount points:
 `/var/www/htdocs/webfolders/config` - This is where the SambaDAV config files go. View their documentation page for more information.
 
 To run the container without SSL enabled (not recommended) simply specify `SAMBADAV_ENABLE_SSL=false` as an environment variable.
+If running the container with SSL, you can upgrade users from HTTP to HTTPS by setting `SAMBADAV_SSL_REDIRECT=true`
 
 ## Building the Container
 
