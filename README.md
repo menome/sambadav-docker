@@ -11,6 +11,7 @@ Pull the container with `docker pull menome/sambadav`
 The container exposes two mount points:
 
 `/etc/ssl/localcerts/` - this is where you put your certificate and key for Apache2. They should be in PEM format, and named `certificate.pem` and `key.pem`.
+
 `/var/www/htdocs/webfolders/config` - This is where the SambaDAV config files go. View their documentation page for more information.
 
 To run the container without SSL enabled (not recommended) simply specify `SAMBADAV_ENABLE_SSL=false` as an environment variable.
